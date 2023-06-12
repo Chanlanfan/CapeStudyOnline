@@ -48,6 +48,16 @@ header h1 {
   
   }
   
+#incompleteNotice{
+    z-index: 2;
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    background-color: rgba(255, 0, 0, 0.46);
+}
+
+
+
 
 /* index.html */
 
