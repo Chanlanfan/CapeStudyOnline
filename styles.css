@@ -347,14 +347,14 @@ visibility: hidden;
     margin: 10px 80px;
     border: #c4c4c4 1px solid;
     position: relative;
-    top: 240px;
+    top: 200px;
     }
     
     #copyright {
         position: absolute;
         bottom: 20px;
         left: 50%;
-        width: 100%;;
+        width: 80%;
         transform: translateX(calc(-50%));
     }
     
