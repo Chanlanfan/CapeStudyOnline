@@ -361,6 +361,72 @@ visibility: hidden;
 }
 
 
+
+
+/* SCHOOL PAGES */
+
+
+@media  screen and (max-width:1000px) {
+    
+}
+.schoolPage #schoolHeading h1{
+position: absolute;
+top: 100px;
+right: 70px;
+font-size: 50px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+#schoolHeading img {
+    width: 100px;
+    position: absolute;
+    top: 100px;
+    left: 60px;
+}
+
+/* TAGS */
+
+.tag {
+    position: absolute;
+    top: 280px;
+    left: 40px;
+
+}
+
+.tag p {
+    display: inline-block;
+margin: 10px 10px;
+}
+
+#videos {
+    padding: 3px 7px;
+    background-color: rgba(255, 0, 0, 0.404);
+    border-radius: 4px;;
+}
+#printing {
+    padding: 3px 7px;
+    background-color: rgba(0, 238, 255, 0.404);
+    border-radius: 4px;;
+}
+#moderated {
+    padding: 3px 7px;
+    background-color: rgba(0, 255, 34, 0.404);
+    border-radius: 4px;;
+}
+#unmoderated {
+    padding: 3px 7px;
+    background-color: rgba(255, 72, 0, 0.404);
+    border-radius: 4px;;
+}
+#locked {
+    padding: 3px 7px;
+    background-color: rgba(255, 0, 0, 0.863);
+    color: white;
+    border-radius: 4px;;
+}
+
+
+
 /* ANIMATIONS */
 
 
