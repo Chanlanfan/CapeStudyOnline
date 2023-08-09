@@ -1,3 +1,22 @@
+<?php
+$servername = "92.205.12.118";
+$username = "chanlanfan";
+$password = "Minecraft1234";
+$databaseName = "CapeStudyOnline";
+
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $databaseName);
+
+// Check connection
+if (!$conn) {
+  die("Connection failed: " . mysqli_connect_error());
+}
+echo "<p id='checkMySQL'>Connected successfully</p>";
+
+$sql = "SELECT * FROM profile_tags WHERE school_id = 'SACH'";
+
+$result = $conn->query($sql);
+?>
 <!-- Basic page format -->
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -8,9 +27,10 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Cape Study Online</title>
+        <title>Cape Study Online | SACS HS</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="/images/CSOlogo/logoV1.png">
         <link rel="stylesheet" href="/styles.css">
     </head>
     <body>
@@ -18,41 +38,25 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <header>
-            <h1>Cape Study Online<span class="copyright">©</span></h1>
+            <h1><span class="copyright">©</span></h1>
             <div id="lastModified">
                 <script>
                   const date = new
                 Date(document.lastModified);
                 document.getElementById("lastModified").innerHTML = "Last updated: "+date.getHours() + ":" + date.getMinutes()+ ":" + date.getSeconds() + " (" + date.getDate() + "/" + date.getMonth() + ")";
                 </script></div>
-                        <div style="top: 60%;"id="incompleteNotice">
-                            <h2>THIS SITE IS INCOMPLETE!</h2>
-                            <p>This is to let you find bugs!</p>
-                        </div>
+<!-- Back Button -->
+<form id="Back" method="get" action="/">
+    <button class="back-button"> <span class="text">Back</span>
+
+      <div class="icons">
+        <div class="cross"></div>
+        <div class="check"></div>
+      </div>
+    </button>
+  </form>
         </header>
 
-<div id="schoolHeading">
-<h1 >SACS</h1>
-<img src="/images/schoolLogos/logo_SACS.jpg">
-
-<!-- TODO: Modernize Tags -->
-<div class="tag">
-<p id="example">examples:</p>
-<p id="videos">videos</p>
-<p id="printing">printing</p>
-<p id="moderated">moderated</p>
-<p id="unmoderated">unmoderated</p>
-<p id="locked">locked</p>
-
-</div>
-
-
-</div>
-
-
-
-
-        <script src="index.js" async defer></script>
     </body>
 </html>
 

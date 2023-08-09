@@ -1,3 +1,21 @@
+<?php
+$servername = "92.205.12.118";
+$username = "chanlanfan";
+$password = "Minecraft1234";
+$databaseName = "CapeStudyOnline";
+
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $databaseName);
+
+// Check connection
+if (!$conn) {
+  die("Connection failed: " . mysqli_connect_error());
+}
+
+
+?>
+
+
 
 
 <!DOCTYPE html>
@@ -12,6 +30,7 @@
         <title>Cape Study Online</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+              <link rel="icon" href="/images/CSOlogo/logoV1.png">
         <link rel="stylesheet" href="/styles.css">
         
     </head>
@@ -29,8 +48,8 @@
         </header>
 
         <div id="incompleteNotice">
-            <h2>THIS SITE IS INCOMPLETE!</h2>
-            <p>This is to let you find bugs!</p>
+            <h2>WE ARE IN BETA</h2>
+            <p>DM suggestions/comments on instagram!</p>
         </div>
 
         <!-- Home Buttons -->
@@ -38,11 +57,15 @@
     <form  method="get" action="/events.php">
         <button type="submit"><span>Events</span></button>
       </form>
+      <form  method="get" action="/incoming/eduFileUpload.html">
+
+        <button type="submit"><span>Upload File</span></button>
+      </form>
 </div>
 <!-- Search Bar -->
-<!--<div id="searchBar">-->
-<!--    <input type="text" placeholder="🔍 Search for: Subjects, Schools or specific work...">-->
-<!--</div>-->
+<!-- <div id="searchBar"> -->
+   <!-- <input type="text" placeholder="🔍 Search for: Subjects, Schools or specific work..."> -->
+<!-- </div> -->
 
 <!-- Lists -->
 <div id="menuList">
@@ -50,29 +73,12 @@
        <h2>Schools: <h2>
 <div class="row">
    <div class="column">   
-       <button onclick="window.location.href='/Projects/CapeStudyOnline/schools/SACS/sacs_high.php';">
+       <button onclick="window.location.href='/schools/SACS/sacs_high.php';">
        <img src="/images/schoolLogos/logo_SACS.jpg">
-       <p>SACS</p>
+       <p>SACS HS</p>
        </button>
        </div>
-           <div class="column">   
-               <button onclick="window.location.href='';">
-               <img src="/images/schoolLogos/logo_other.png">
-               <p>OTHER</p>
-               </button>
-               </div>
-               <div class="column">   
-                   <button onclick="window.location.href='';">
-                   <img src="/images/schoolLogos/logo_other.png">
-                   <p>OTHER</p>
-                   </button>
-                   </div>
-                   <div class="column">   
-                       <button onclick="window.location.href='';">
-                       <img src="/images/schoolLogos/logo_other.png">
-                       <p>OTHER</p>
-                       </button>
-                       </div>
+    
 </div>
    </div>
 </div>
@@ -81,6 +87,18 @@
 
 <p id="whitespace">whitespace</p>
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2405226533410259"
+     crossorigin="anonymous"></script>
+<!-- IndexAd01 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2405226533410259"
+     data-ad-slot="5614947543"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 
         <script src="index.js" async defer></script>
@@ -96,6 +114,7 @@
 <p>links:</p>
 <a href="/index.html">Home</a>
 <a href="/index.html#schools">Schools</a>
+<a href="/incoming/eduFileUpload.html">Upload</a>
 </div>
 
 <hr>
