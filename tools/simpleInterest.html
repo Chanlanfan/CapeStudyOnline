@@ -1,0 +1,152 @@
+
+
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Cape Study Online</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+              <link rel="icon" href="/images/CSOlogo/logoV1.png">
+        <link rel="stylesheet" href="/styles.css">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2405226533410259"
+     crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header>
+            <h1><span class="copyright">©</span></h1>
+            <div class='topnav'>
+                <a href="/updateLog.php">Updates</a>
+
+                </div>
+        </header>
+
+
+
+<div id="HPL-inputs">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <div class="base"> Principal Amount:
+      <input type="text" id="base" name="base" onkeyup="baseChanged()" onchange="baseChanged()">
+    </div>  
+    <div class="int"> Interest Amount
+      <input type="text" id="interest" name="interest" onkeyup="baseChanged()" onchange="baseChanged()">
+    </div>
+    <div class="years"> no. Years:
+        <input type="text" id="years" name="years" onkeyup="baseChanged()" onchange="baseChanged()">
+      </div>  
+
+
+      <div class="final"> Accrued Amount: 
+        <input type="final" id="final" name="final" onkeyup="finalChanged()" onchange="finalChanged()"> 
+               <input type="checkbox" id="intType" name="intType" onkeyup="baseChanged()" onchange="baseChanged()" onkeyup="finalChanged()" onchange="finalChanged()">
+        off = simple, on = compound <strong>(Compund Reverse does not work!!)</strong>
+      </div>
+
+
+
+
+
+
+</div>
+
+<script>
+var base;
+var int;
+var intDec;
+       var years;
+       var final;
+
+       var finalBW;
+       var baseBW;
+
+    function baseChanged() {
+       base = document.getElementsByName("base")[0].value;
+      int = document.getElementsByName("interest")[0].value;
+    years  =  document.getElementsByName("years")[0].value ;
+
+    intDec = int/100
+    console.log(intDec);
+
+if(document.getElementsByName("intType")[0].checked){
+    console.log('1');
+    final = base*(1+intDec)**years;
+}
+
+else {
+    console.log('0')
+    final = base*(1+intDec*years);
+}
+
+document.getElementsByName("final")[0].value = Math.floor(final);
+console.log(final)
+    }
+
+
+function finalChanged() {
+    finalBW  =  document.getElementsByName("final")[0].value ;
+    baseBW = finalBW/(1+intDec*years);
+    
+    console.log(baseBW + " final:" + finalBW);
+     document.getElementsByName("base")[0].value = Math.round(baseBW) ;
+
+     if(document.getElementsByName("intType")[0].checked){
+    console.log('11');
+    baseBW = finalBW/(1+intDec*years);
+}
+
+else {
+    console.log('10')
+    baseBW = finalBW/(1+intDec)**years;
+}
+}
+
+</script>
+
+
+
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+        <script src="index.js" async defer></script>
+
+<!-- Footer -->
+<footer>
+    <!-- about -->
+    <p id="footerAboutHeading">About | </p>
+    <p id="footerAboutText"></p>
+
+<!-- links -->
+<div id="footerLinks">
+<p>links:</p>
+<a href="/index.html">Home</a>
+<a href="/index.html#schools">Schools</a>
+<a href="/incoming/eduFileUpload.html">Upload</a>
+</div>
+
+<hr>
+
+
+<!-- copyright -->
+<div id="copyright">
+    <p>copyright © 2023 All rights reserved by Charles Fletcher</p>
+</div>
+
+
+</footer>
+
+
+    </body>
+</html>

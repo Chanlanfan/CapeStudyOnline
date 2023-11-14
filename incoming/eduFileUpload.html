@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Cape Study Online | Upload</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="/images/CSOlogo/logoV1.png">
+        <link rel="stylesheet" href="/styles.css">
+        
+    </head>
+    <body>
+
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header>
+            <h1><span class="copyright">©</span></h1>
+        <!-- Back Button -->
+<form id="Back" method="get" action="/">
+    <button class="back-button"> <span class="text">Back</span>
+
+      <div class="icons">
+        <div class="cross"></div>
+        <div class="check"></div>
+      </div>
+    </button>
+  </form>
+        </header>
+
+
+<!-- Info Blocks -->
+
+<div id='uploadFile'>
+<h1>Upload File:</h1>
+         <form action="/incoming/eduFileUpload.php" method="post">
+             
+<p>
+               <label for="title">Title:</label>
+               <input type="text" name="title" id="title">
+            </p>
+ 
+             
+<p>
+               <label for="file_name">File Name:</label>
+               <input type="text" name="file_name" id="file_name">
+            </p>
+ 
+             
+<p>
+               <label for="link">link:</label>
+               <input type="text" name="link" id="link">
+            </p>
+ 
+             
+            <p>
+                <label for="school_code">School: </label>
+                <select  name="subject_code" id="subject_code">
+                    <option value="" disabled selected hidden>Select ▼</option>
+                    <option value="SACS">SACS (High School)</option>
+
+    
+                </select>             </p>
+ 
+             
+<p>
+               <label for="subject_code">Subject: </label>
+               <select type="text" name="subject_code" id="subject_code">
+                <option value="0" selected>General</option>
+                <option value="0" disabled>---------</option>
+                <option value="17" >Afrikaans</option>
+                <option value="1" >Mathematics (general)</option>
+                <option value="2" >Mathematics (literacy)</option>
+                <option value="3" >Mathematics (Pure)</option>
+                <option value="4" >EMS (Economics and Accounting)</option>
+                <option value="5" >Accounting</option>
+                <option value="6" >Economics</option>
+                <option value="7" >Social Science</option>
+                <option value="8" >Geography</option>
+                <option value="9">History</option>
+                <option value="10" >Sciences (All)</option>
+                <option value="11" >Physical Science (Physics)</option>
+                <option value="12" >Life Sciences (Biology)</option>
+                <option value="13" >Marine Biology</option>
+                <option value="14" >Visual Arts</option>
+                <option value="15" >Music</option>
+                <option value="16" >English</option>
+                <option value="17" >Afrikaans</option>
+                <option value="18" >Xhosa</option>
+                <option value="19" >French</option>
+
+            </select>
+            </p>
+            <p>
+                <label for="grade">Grade: </label>
+                <select name="grade" id="gradeList">
+                    <option value="0" selected>General</option>
+                    <option value="1" >Grade 8</option>
+                    <option value="2" >Grade 9</option>
+                    <option value="3" >Grade 10</option>
+                    <option value="4" >Grade 11</option>
+                    <option value="5" >Grade 12</option>
+                    <option value="6" >Teachers</option>
+                </select>
+             </p>
+                         <p>
+                <label for="term">Term: </label>
+                <select name="term" id="termList">
+                    <option value="0" selected>General</option>
+                    <option value="1" >Term 1</option>
+                    <option value="2" >Term 2</option>
+                    <option value="3" >Term 3</option>
+                    <option value="4" >Term 4</option>
+
+                </select>
+             </p>
+            <p>
+                <label for="publisher">Publisher: </label>
+                <input type="text" name="publisher" id="publisher">
+             </p>
+             <p>
+                <label for="author">Author: </label>
+                <input type="text" name="author" id="author">
+             </p>
+                          <p>
+                <label for="email">Email: </label>
+                <input type="text" name="email" id="email">
+             </p>
+            <input id="submit" type="submit" value="Submit">
+         </form>
+           
+        </div>
+ <p id="submitScroll"></p>   
+<!-- <div id='uploadLeftPanel'>   
+    <h1>SUBJECT CODES: </h1>
+<p>0 - General
+<br>    1 - Mathematics (all)
+<br>2 - Mathematics literacy
+<br>3 - Mathematics pure
+<br>4 - EMS (Economics and Accounting)
+<br>5 - Accounting
+<br>6 - Economics
+<br>7 - Social Sciences (Geography and History)
+<br>8 - Geography
+<br>9 - History
+<br>10 - Sciences (all)
+<br>11 - Physical Science (Physics)
+<br>12 - Life Science (Biology)
+<br>13 - Marine Biology
+<br>14 - Visual Arts
+<br>15 - Music
+<br>16 - English
+<br>17 - Afrikaans
+<br>18 - Xhosa
+<br>19 - French
+<br></p>
+
+<h1>School Codes:</h1>
+<p>  SACS - South African College <strong>High</strong> School
+<br> SACJ - South African College <strong>Junior</strong> School
+<br> more soon...
+<br>
+<br>
+<h3>These manual entries are temproary.<br>It will turn into a dropdown list soon!</h3>
+</p>
+</div> -->
+
+
+<div id='uploadRightPanel'>   
+    <h1>Title:</h1>
+    <p>This is the text that will be displayed on the site.<br>
+    Avoid using Grades and Terms (unless multiple grades/terms)</p>
+    <br>
+    <h1>File Name:</h1>
+    <p>Used as auxiliary name.<br> <strong>DO NOT USE: </strong>spaces or unique characters</p>
+    <br>
+    <h1>Link:</h1>
+    <p>must begin with <strong>http:// or https://</strong> .<br>The link must direct to a file (not a website). We recommend using Google Drive. <br> Make sure the link is set link access to <strong>ANYONE WITH LINK</strong>. or we will deny your submittion.<br> Don't worry, you email is kept private. Only your name will show</p>
+    <br>
+    <h1>School Code:</h1>
+    <p>It is a three or four letter acronym of the school, like SACS or RBHS </p>
+    <br>
+    <h1>Grade:</h1>
+    <p>Put grade of file, or if it is general, mark it accordingly.</p>
+    <br>
+    <h1>Term:</h1>
+    <p>Put 'General' for work that applies throughout the year, else put the term the work is meant for.</p>
+    <br>
+    <h1>Subject Code:</h1>
+    <p>A number that represents a subject. <br>See the panel to the left/below.</p>
+    <br>
+    <h1>Publisher:</h1>
+    <p>Your name. (Keep it the same)</p>
+    <br>
+    <h1>Other: </h1>
+    <p>If you wish to edit or remove your upload, please email:<br>cwfletcher2007@gmail.com OR<br>DM us on instagram: @capestudy.online</p>
+
+    <br>
+    <br>
+    <h3>Happy Studying</h3>
+</div>
+
+
+<p id="whitespace"></p>
+
+
+<!-- Footer -->
+<footer>
+    <!-- about -->
+    <p id="footerAboutHeading">About | </p>
+    <p id="footerAboutText"></p>
+
+<!-- links -->
+<div id="footerLinks">
+<p>links:</p>
+<a href="/index.html">Home</a>
+<a href="/index.html#schools">Schools</a>
+</div>
+
+<hr>
+
+
+<!-- copyright -->
+<div id="copyright">
+    <p>copyright © 2023 All rights reserved by Charles Fletcher</p>
+</div>
+
+
+</footer>
+    </body>
+</html>
