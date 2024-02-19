@@ -7,16 +7,8 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
 
-    <!-- NAVBAR -->
-    <div class="navbar">
-        <p id="title"></p>
-    </div> 
-
-<div class="panel recommended">
-<p class="title">Recommended for You</p>
-</div>
-
-
+    </header> 
 </body>
 </html>
