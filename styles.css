@@ -41,7 +41,7 @@ position: relative;
         content: 'CSO';
         color: white;
         font-size: 2em;
-        position: absolute;
+
         top: 50%;
         left: 5%;
         transform: translate(0%, -50%);
@@ -66,4 +66,16 @@ position: relative;
     transform: translate(-50%, 0);  
     font-size: 1.2em;
     font-weight: 700; 
+}
+
+@media screen and (max-width: 1000px){
+    .panel.recommended .title{
+
+        top: 1.5vh;
+        
+
+        font-size: 1.1em;
+width: 100%;
+text-align: center;
+    }   
 }
