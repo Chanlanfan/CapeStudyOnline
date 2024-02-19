@@ -1,143 +1,64 @@
 
 /* GLOBAL */
 
-* {
-    font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
-
-}
-
 html {
-scroll-behavior: smooth;
-}
+    scroll-behavior: smooth;
+  }
 
 body {
-margin: 0;
+    margin: 0;
 }
 
 /* Elements */
 
-
-.itemSelect #submit{
-background-image: linear-gradient(92.88deg, #ffffff 9.16%, #ffffff 64.72%);
-border-radius: 4px;
-border-style: none;
-box-sizing: border-box;
-color: #000000;
-cursor: pointer;
-flex-shrink: 0;
-font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
-font-size: 15px;
-font-weight: 500;
-height: 1.5rem;
-width: 100px;
-margin: 10px auto;
-display: block;
-border: black 1px solid;
-text-align: center;
-text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
-transition: all .5s;
-user-select: none;
--webkit-user-select: none;
-touch-action: manipulation;
-position: relative;
-bottom: 60px;
-white-space: nowrap;
-position: absolute;
-bottom: 0px;
-right: 10px;
+h1, h2, h3, p, button, a {
+      font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+  
 }
 
 ::-webkit-scrollbar {
-display: none;
+    display: none;
 }
-
-
-/* Texts */
-
-#footerAboutText::after {
-content: "Cape Study Online is free website that offers files uploaded by fellow students. The site was founded by Charles Fletcher in August 2023 and is still being updated almost every week.";
-}
-
-
-
-
-
-
-
-
 
 /* Header + NavBar*/
 
 header {
-
-overflow: hidden;
-height: 60px;
-border: 10px;
-border-bottom: 1px solid rgb(180, 180, 180);
-margin-top: -10px;
-padding-bottom: 10px;
-padding-left: 10px;
-margin-bottom: 100px;
+    overflow: hidden;
+    height: 60px;
+    border: 10px;
+    border-bottom: 1px solid rgb(180, 180, 180);
+    margin-bottom: 100px;
 }
 
-header h1::before { 
- content: "Cape Study Online";
-margin-top: 10px;
+header h1 {
+    margin: 10px;
 }
 
 .copyright {
-content: "h";
-position: relative;
-bottom: 10px;
-font-weight: 300;
-font-size: 15px;
-
+    position: relative;
+    bottom: 10px;
+    font-weight: 300;
+    font-size: 15px;
+    
 }
 
 #lastModified{
-font-size: 13px;
-font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
-position: absolute;
-bottom: 1px;
-right: 5px;
-
-}
-#checkMySQL{
-font-size: 13px;
-font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
-position: absolute;
-bottom: 5px;
-right: 5px;
-
-}
-
+    font-size: 13px;
+      font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+  position: absolute;
+  top: 1px;
+  right: 5px;
+  
+  }
+  
 #incompleteNotice{
-z-index: 2;
-position: absolute;
-top: 280px;
-right: 50px;
-background-color: rgba(255, 217, 0, 0.46);
-padding: 5px;
+    z-index: 2;
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    background-color: rgba(255, 0, 0, 0.46);
 }
 
-.topnav a{
-overflow: hidden;
-position: absolute;
-top: 15px;
-text-decoration: none;
-right: 30px;
-font-size: 25px;
-padding: 0px 0px;
-color: black;
-font-weight: 700;
-font-size: 25px;
-}
-@media  screen and (max-width:1000px) {
-header h1::before { 
-  content: "CSO";
-
-}
-}
 
 
 
@@ -145,58 +66,58 @@ header h1::before {
 
 #HomeButtons button {
 
-background-image: linear-gradient(92.88deg, #ffffff 9.16%, #ffffff 64.72%);
-border-radius: 8px;
-border-style: none;
-box-sizing: border-box;
-color: #000000;
-cursor: pointer;
-flex-shrink: 0;
-font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
-font-size: 30px;
-font-weight: 500;
-height: 4rem;
-width: 50%;
-margin: 10px auto;
-display: block;
-border: black 1px solid;
-text-align: center;
-text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
-transition: all .5s;
-user-select: none;
--webkit-user-select: none;
-touch-action: manipulation;
-position: relative;
-bottom: 60px;
-white-space: nowrap;
+    background-image: linear-gradient(92.88deg, #ffffff 9.16%, #ffffff 64.72%);
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    height: 4rem;
+    width: 50%;
+    margin: 10px auto;
+    display: block;
+    border: black 1px solid;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: all .5s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    position: relative;
+    bottom: 60px;
 }
 
 
 #HomeButtons button:hover {
-box-shadow: rgba(0, 0, 0, 0.6) 0 1px 30px;
-transition-duration: .1s;
-}
+    box-shadow: rgba(0, 0, 0, 0.6) 0 1px 30px;
+    transition-duration: .1s;
+    
+  }
 
 
 /* Search bar */
 
 #searchBar {
-text-align: center;   
+    text-align: center;   
 
 
 }
 
-#searchBar input, #searchBar select{
-width: 80%;
-height: 40px;
-font-size: 15px;
-border: 1px solid rgb(0, 0, 0);
-border-radius: 8px;
+#searchBar input{
+    width: 80%;
+    height: 40px;
+    font-size: 15px;
+     border: 1px solid rgb(0, 0, 0);
+    border-radius: 8px;
 
 }
 
 #menuList {
-margin: 50px 10px;
+    margin: 50px 10px;
 }
 
 .row {
@@ -205,47 +126,39 @@ overflow: scroll;
 }
 
 .row div{
-display: inline-block;
-padding: 10px 10px;
+    display: inline-block;
+   padding: 10px 10px;
 }
 
 .row button{
 cursor: pointer;
 position: relative;
-height: 150px;
-width: 130px;
-background-color: white;;
-border-radius: 10px;
-border-width: 0;
-box-shadow: rgba(0, 0, 0, 0.6) 0 1px 10px;
-
-}
-
-.row button:hover{
-  box-shadow: rgba(0, 0, 0, 0.6) 0 1px 20px;
-transition: 0.2s;
+    height: 150px;
+    width: 130px;
+    background-color: white;;
+    border-radius: 10px;
+    border-width: 0;
+    box-shadow: rgba(0, 0, 0, 0.6) 0 1px 10px;
 }
 
 .column img {
 
-position: absolute;
-left: 50%;
-transform: translateX(-50%);    
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);    
 bottom: 40%;
-width:50px;
-
+    width:50px;
+    
 }
 
 .column p{
-font-size: 30px;
-font-weight: 500;
+    font-size: 30px;
+    font-weight: 500;
 position: absolute;
-left: 50%;
-transform: translateX(-50%);    
-text-align: center;
-padding: 0;
-white-space: wrap;
-
+    left: 50%;
+    transform: translateX(-50%);    
+    text-align: center;
+    
 }
 
 
@@ -258,131 +171,131 @@ white-space: wrap;
 
 
 .back-button {
-all:revert;
-overflow: hidden;
-color: #fff;
-background-color: #b60000;
-position: absolute;
+    all:revert;
+    overflow: hidden;
+    color: #fff;
+    background-color: #b60000;
+    position: absolute;
 right: 10px;
 top: 10px;
-padding: .35rem .4rem;
-border: none;
-border-radius: 10px;
-transition: all 0.15s ease-out;
-cursor: pointer;
+    padding: .35rem .4rem;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.15s ease-out;
+    cursor: pointer;
 }
 
 .back-button > .text {
-padding-right: 1.5em;
-display: block;
-position: relative;
-text-transform: uppercase;
-padding: .5em 1em;
-transition: all 0.15s ease-out;
-font-weight: 700;
-border-right: 2px solid rgba(255,255,255,.1);
-letter-spacing: 1px;
-margin-right: 3em;
-font-size: 13px;
+    padding-right: 1.5em;
+    display: block;
+    position: relative;
+    text-transform: uppercase;
+    padding: .5em 1em;
+    transition: all 0.15s ease-out;
+    font-weight: 700;
+    border-right: 2px solid rgba(255,255,255,.1);
+    letter-spacing: 1px;
+    margin-right: 3em;
+    font-size: 13px;
 }
 
 .back-button .cross::after, .back-button .cross::before {
-display: block;
-background-color: #fff;
-margin-left: auto;
-width: 1em;
-left: 0;
-height: .2em;
-position: absolute;
-transition: all 0.15s ease-out;
-content: "";
-right: 0;
-margin-right: auto;
+    display: block;
+    background-color: #fff;
+    margin-left: auto;
+    width: 1em;
+    left: 0;
+    height: .2em;
+    position: absolute;
+    transition: all 0.15s ease-out;
+    content: "";
+    right: 0;
+    margin-right: auto;
 }
 
 .back-button .cross::after {
-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 .back-button .cross {
-margin-top: -2px;
+    margin-top: -2px;
 }
 
 .back-button .cross::before {
-transform: rotate(-45deg);
+    transform: rotate(-45deg);
 }
 
 .back-button:hover {
-background-color: #c44346;
+    background-color: #c44346;
 }
 
 .back-button > .icons {
-display: flex;
-width: 3em;
-height: 100%;
-position: absolute;
-flex-direction: column;
-top: 0;
-transition: all 0.15s ease-out;
-align-items: center;
-right: 0;
-justify-content: center;
+    display: flex;
+    width: 3em;
+    height: 100%;
+    position: absolute;
+    flex-direction: column;
+    top: 0;
+    transition: all 0.15s ease-out;
+    align-items: center;
+    right: 0;
+    justify-content: center;
 }
 
 .back-button:hover .text {
-transform: translateX(calc(-100% - 3em));
+    transform: translateX(calc(-100% - 3em));
 }
 
 .back-button:hover .icons {
-width: 100%;
-transform: scale(1.3);
+    width: 100%;
+    transform: scale(1.3);
 }
 
 
 /* Footer */
 
 footer{
-position: relative;
+    position: absolute;
 
-bottom: 0;
-width: 100%;
-padding-bottom: 300px;
-background-color: rgb(226, 226, 226);
-color: rgb(0, 0, 0);
-text-align: center;
+    bottom: 1;
+    width: 100%;
+    padding-bottom: 300px;
+    background-color: rgb(226, 226, 226);
+    color: rgb(0, 0, 0);
+    text-align: center;
 }
 
 
 #footerAboutHeading {
-float: left;
+    float: left;
 position: absolute;
-left: 15%;
+left: 25%;
 font-size: 18px;
 font-weight: 700;
 }
 
 #footerAboutText {
-float: left;
+    float: left;
 position: absolute;
-left: calc(15% + 80px);
+left: calc(25% + 80px);
 width: 500px;
 font-size: 18px;
 text-align: left;
 }
 
 #footerLinks {
-position: absolute;
-right: 30%;
+    position: absolute;
+    right: 30%;
 
 }
 #footerLinks p{
-font-size: 18px;
-font-weight: 700;
-margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 0;
 }
 
 #footerLinks a {
-margin: 10px 0;
+    margin: 10px 0;
 display: block;
 font-style: normal;
 text-decoration: none;
@@ -396,10 +309,10 @@ top: 200px;
 }
 
 #copyright {
-position: absolute;
-bottom: 50px;
-left: 50%;
-transform: translateX(calc(-50%));
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(calc(-50%));
 }
 
 
@@ -408,43 +321,43 @@ transform: translateX(calc(-50%));
 
 
 
-#footerAboutHeading {
-  float: left;
-position: absolute;
-left: 5%;
-font-size: 18px;
-font-weight: 700;
-}
+    #footerAboutHeading {
+        float: left;
+    position: absolute;
+    left: 5%;
+    font-size: 18px;
+    font-weight: 700;
+    }
+    
+    #footerAboutText {
+        float: left;
+    position: absolute;
+    left: calc(5% + 80px);
+    width: 300px;
+    font-size: 15px;
 
-#footerAboutText {
-  float: left;
-position: absolute;
-left: calc(5% + 80px);
-width: 300px;
-font-size: 15px;
-
-}
-
-#footerLinks {
+    }
+    
+    #footerLinks {
 visibility: hidden;
-
-}
-
-footer hr {
-margin: 10px 80px;
-border: #c4c4c4 1px solid;
-position: relative;
-top: 200px;
-}
-
-#copyright {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  width: 80%;
-  transform: translateX(calc(-50%));
-}
-
+    
+    }
+    
+    footer hr {
+    margin: 10px 80px;
+    border: #c4c4c4 1px solid;
+    position: relative;
+    top: 200px;
+    }
+    
+    #copyright {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        width: 80%;
+        transform: translateX(calc(-50%));
+    }
+    
 }
 
 
@@ -454,7 +367,7 @@ top: 200px;
 
 
 @media  screen and (max-width:1000px) {
-
+    
 }
 .schoolPage #schoolHeading h1{
 position: absolute;
@@ -465,901 +378,64 @@ font-family: Arial, Helvetica, sans-serif;
 }
 
 #schoolHeading img {
-width: 100px;
-position: absolute;
-top: 100px;
-left: 10%;
+    width: 100px;
+    position: absolute;
+    top: 100px;
+    left: 10%;
 }
-
-#school-events {
-  background-color: rgb(184, 184, 184);
-  border: #000000 solid 1px;
-  width: 0;
-  height: 50vh;
-  position: absolute;
-  top: 200px;
-  right: 20px;
-  border-radius: 10px;
-  padding: 10px;
-  overflow-x: scroll;
-  visibility: hidden;
-  z-index: 4;
-  transition: 0.3s;
-  border: 1px black solid;
-}
-
-#event-open-btn button {
-  background: linear-gradient(92.88deg, #90bdff 9.16%, #4a87ff 64.72%);
-border-radius: 8px;
-border-style: none;
-box-sizing: border-box;
-color: #000000;
-cursor: pointer;
-flex-shrink: 0;
-font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
-font-size: 10px;
-font-weight: 500;
-height: 30px;
-width: 100px;
-margin: 10px auto;
-display: block;
-border: black 1px solid;
-text-align: center;
-text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
-transition: all .5s;
-user-select: none;
--webkit-user-select: none;
-touch-action: manipulation;
-position: relative;
-bottom: 60px;
-white-space: nowrap;
-}
-
-#event-open-btn button:hover{
-
-font-size: 11px;
-}
-
-
-
-#event-open-btn {
-  z-index: 3;
-  position: absolute;
-  right: 10px;
-  top: 250px;
-  }
-
-
-
-
-#event-close-btn button{
-
-  left: 10px;
-  top: 10px;
-  background: linear-gradient(92.88deg, #90bdff 9.16%, #4a87ff 64.72%);
-border-radius: 8px;
-border-style: none;
-box-sizing: border-box;
-color: #000000;
-cursor: pointer;
-font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
-font-size: 9px;
-font-weight: 500;
-height: 20px;
-width: 80px;
-
-
-border: black 1px solid;
-text-align: center;
-text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
-transition: all .5s;
-user-select: none;
-
-
-white-space: nowrap;
-}
-
-@media  screen and (max-width:1000px) {
-#school-events{
-  width: 90vw;
-  left: 50%;
-  transform: translatex(-50%);
-  top: 100px;
-}
-
-}
-
-
-#school-events p {
-  margin: 10px;
-}
-
 
 /* TAGS */
 
 .tag {
-position: absolute;
-top: 280px;
-left: 40px;
-
+    position: absolute;
+    top: 280px;
+    left: 40px;
 
 }
 
 .tag p {
-display: inline-block;
-margin: 10px 10px;
-padding: 3px 7px;
-border-radius: 4px;
-
-}
-
-#videoTag {
-background-color: rgba(255, 0, 0, 0.404);
-}
-#photoTag {
-background-color: rgba(0, 238, 255, 0.404);
-}
-#ModerateTag {
-background-color: rgba(0, 255, 34, 0.404);
-}
-#lockTag {
-
-background-color: rgba(51, 255, 0, 0.263);
-}
-#exampleTag {
-
-background-color: rgba(17, 0, 255, 0.863);
-color: white;
-}
-#pdfTag {
-
-background-color: rgba(139, 0, 0, 0.849);
-color: white;
-}
-
-
-
-/* EVENTS */
-
-.eventBlock {
-margin: 30px 20px;
-padding: 1px 10px;
-word-wrap: break-word;
-border: 2px solid rgba(97, 97, 97, 0.555);
-border-radius: 5px;
-position: relative;
-}
-
-.eventBlock #event_id {
-display: inline-block;
-font-size: 150%;
-}
-
-.eventBlock #heading {
-display: inline-block;
-font-size: 150%;
-}
-
-.eventBlock #event_date {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-  color: grey;
-  font-size: 100%;
-  }
-
-.eventBlock #body {
-
-white-space: normal;
-
-}
-
-
-@media screen and (max-width: 1000px) {
-.eventBlock #event_date {
-bottom: 5px;
-  font-size: 75%;
-  }
-  .eventBlock #event_id {
-display: inline-block;
-font-size: 100%;
-}
-
-.eventBlock #heading {
-display: inline-block;
-font-size: 100%;
-}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/* PROFILE FILES TABLE */
-#tagTableGap {
-padding-top: 180px;
-}
-
-
-/*  Selection */
-
-.itemSelect {
-
-
-margin-left: 10px;
-padding: 10px 10px 10px 10px;
-height: 180px;
-width: 300px;
-background-color: lightgray;
-border-radius: 10px;
-position: relative;
-}
-
-@media screen and (max-width: 1000px){
-  .itemSelect {
-    top: 50px;
-  }
-}
-
-.itemSelect select{
-/* reset */
-appearance: none;
-border: 0;
-outline: 0;
-font: inherit;
-
-/* personalize */
-width: 8em;
-height: 1.8em;
-padding: 0 .1em 0 0.5em;
-color: rgb(0, 0, 0);
-border-radius: 0.25em;
-border: #000000 1px solid;
-box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
-cursor: pointer;
-text-align: center;
-margin-left: 10px;
-}
-
-.itemSelect .subjectSelect select{
-width: 200px;
-}
-.itemSelect .termSelect select{
-width: 200px;
-}
-
-.noResults {
-margin-left: 20px;
-}
-
-
-.profileFiles {
-overflow-x: scroll;
-  margin-top: 40px;
-
-
-}
-#tableHeading{
-margin-left: 10px;
-}
-
-.profileFiles table{
-font-size: 15px;
-font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
-
-margin-left: 10px;
-margin-right: 10px;
-width: 150%;
-}
-
-
-.profileFiles table td {
-
-border-bottom: #7e7e7e82 1px solid;
-}
-
-.fileNameCol {
-width: 10%;
-}
-
-.DownloadBtncol {
-width: 250px;
-
-}
-
-.fileUploadCol {
-color: rgb(92, 92, 92);
-width: 300px;
-}
-
-.fileName {
-position: relative;
-top: 5px;
-font-size: 20px;;
-}
-
-
-.downloadBtn {
-background-image: linear-gradient(92.88deg, #3873a3 9.16%, #005faf 64.72%);
-border-radius: 8px;
-border-style: none;
-box-sizing: border-box;
-color: #FFFFFF;
-cursor: pointer;
-flex-shrink: 0;
-font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
-font-size: 30px;
-font-weight: 500;
-height: 3rem;
-width: 250px;
-margin: 10px auto;
-display: block;
-padding: 0 1.6rem;
-text-align: center;
-text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
-transition: all .5s;
-user-select: none;
--webkit-user-select: none;
-touch-action: manipulation;
-}
-.downloadBtn:hover {
-box-shadow: rgba(0, 0, 0, 0.5) 0 1px 30px;
-transition-duration: .1s;
-}
-
-@media screen and (max-width: 1000px){
-.fileNamecol {
-white-space: nowrap;
-}
-
-.downloadBtn{
-  font-size: 15px;
-  padding: 1px;
-  width: 100px;
-}
-
-
-}
-
-/* File Upload */
-
-#uploadFile{
-position: relative;
-padding-bottom: 200px;
-display: flex;
-justify-content: center;
-right: 100px;
-
-}
-#uploadFile h1 {
-position: relative;
-top: -60px;
-}
-#uploadFile label {
-position: relative;
-right: 30px;
-}
-
-#uploadFile input, #gradeList select{
-width: 300px;
-height: 20px;
-float: right;
-}
-
-
-#uploadFile p{
-font-size: 25px;
-}
-#uploadFile #submit{
-background-image: linear-gradient(92.88deg, #3873a3 9.16%, #005faf 64.72%);
-border-radius: 8px;
-border-style: none;
-box-sizing: border-box;
-color: #FFFFFF;
-cursor: pointer;
-flex-shrink: 0;
-font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
-font-size: 30px;
-font-weight: 500;
-height: 3rem;
-width: 250px;
-margin: 10px auto;
-display: block;
-padding: 0 1.6rem;
-text-align: center;
-text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
-transition: all .5s;
-user-select: none;
--webkit-user-select: none;
-touch-action: manipulation;
-position: relative;
-right: 50px;
-}
-
-
-
-
-
-
-
-@media screen and (max-width: 1000px){
-#uploadFile{
-  position: relative;
-      padding-bottom: 200px;
-      display: flex;
-      justify-content: center;
-  right: 130px;
-  top: -50px;
-  }
-  #uploadFile h1 {
-      position: relative;
-      top: -60px;
-      left: 190px;
-      white-space: nowrap;
-  }
-  #uploadFile label {
-      position: relative;
-      right: 30px;
-  }
-  
-  #uploadFile input{
-      width: 300px;
-      height: 20px;
-  }
-  
-  #uploadFile p{
-      position: relative;
-      font-size: 25px;
-      left: 50px;
-      padding-bottom: 10px;
-  }
-  #uploadFile #submit{
-      background-image: linear-gradient(92.88deg, #3873a3 9.16%, #005faf 64.72%);
-      border-radius: 8px;
-      border-style: none;
-      box-sizing: border-box;
-      color: #FFFFFF;
-      cursor: pointer;
-      flex-shrink: 0;
-      font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
-      font-size: 30px;
-      font-weight: 500;
-      height: 3rem;
-      width: 250px;
-      margin: 10px auto;
-      display: block;
-      padding: 0 1.6rem;
-      text-align: center;
-      text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
-      transition: all .5s;
-      user-select: none;
-      -webkit-user-select: none;
-      touch-action: manipulation;
-      position: relative;
-      right: 0;
-  }
-
-
-
-}
-
-#uploadLeftPanel{
-position: absolute;
-top: 180px;
-left: 2%;
-border: #000000 1px solid;
-width: 310px;
-padding: 0 10px 0 10px;
-
-}
-#uploadRightPanel{
-position: absolute;
-top: 180px;
-right: 2%;
-border: #000000 1px solid;
-width: 370px;
-padding: 0 10px 0 10px;
-
-}
-
-#uploadPanel h1, #uploadPanel p{
-margin: 0;
-font-size: 15px;
-}
-
-@media screen and (max-width: 1000px){
-#uploadLeftPanel{
-  position: absolute;
-  top: 2000px;
-  left: 2%;
-  border: #000000 1px solid;
-  width: 350px;
-  padding: 0 10px 0 10px;
-  cursor: grab;
-}
-#uploadRightPanel{
-  position: absolute;
-  top: 1000px;
-  right: 2%;
-  border: #000000 1px solid;
-  width: 370px;
-  padding: 0 10px 0 10px;
-  cursor: grab;
-}
-
-#whitespace {
-  padding-top: 1000px;
-}
-
-#submitScroll::before{
-  content: "scroll ↓";
-position: absolute;
-left: 55%;
-top: 670px;
-
-}
-}
-
-
-/* All sports page */
-
-#sport-scores-loaded{
-margin-top: 100px;
-position: relative;
-top: 100px;
-}
-#sport-menu{
-  position: absolute;
-  top: 50px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-#sport-menu button{
-  position: absolute;
-  top: 120px;
-  left: 50%;
-  transform: translateX(-50%);
-
-  width: 100px;
-  background-color: #005faf;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  cursor:pointer;
-}
-
-#sport-menu button:hover{
-  background-color: #b0dbff;
-  color: #001f39;
-}
-
-@media screen and (max-width: 1000px){
-  #sport-menu button{
-    top: 150px;
-left: 10%;
-transform: translateX(40%);
-  }
-}
-
-/* SPORTS PAGE */
-
-
-
-
-
-
-.top-sport{
-width: 50%;
-height: 200px;
-padding: 10px 10px 10px 10px;
-position: absolute;
-top: 100px;
-left: 50%;
-transform: translateX(-50%);
-background-color: #c4c4c4;
-border-radius: 10px;
-
-}
-@media screen and (max-width: 1000px){
-  .top-sport{
-    width: 90%;
-    height: 100px;
-    padding: 5px;
-    top: 50px;
-  }
-  }
-
-.top-sport h1 {
-font-size: 45px;
-}
-@media screen and (max-width: 1000px){
-  .top-sport h1 {
-  font-size: 20px;
-  }
-  }
-
-
-
-.top-sport-heading{
-margin: 20px 30px;
-white-space: nowrap;
-overflow:auto;
-font-size: 20px;
-}
-
-
-#start-time-top-sport {
-    position: absolute;
-    top: -00px;
-left: 30px;
-font-weight: 700;
-font-size: 20px;
-}
-@media screen and (max-width: 1000px){
-  #start-time-top-sport{
-    top: -10px;
-    left: 10px;
-    font-size: 17px;
-  }
-}
- #age-group-top-sport {
-    position: absolute;
-    top: -10px;
-left: 50%;
-transform: translateX(-50%);
-font-weight: 800;
-font-size: 30px;
-}
-@media screen and (max-width: 1000px){
-  #age-group-top-sport{
-    top: -15px;
-    font-size: 20px;
-  }
-}
-
-#home-team {
-display:inline;
-float: left;
-}
-
-#away-team {
-display:inline;
-float: right;
-}
-
-.game-status-top-sport {
-position: absolute;
-top: 70px;
-left: 50%;
-transform: translateX(-50%);
-
-font-family: arial;
-font-weight: bolder;
-font-size: 30px;
-letter-spacing: 5px;
-
-
-}
-
-@media screen and (max-width: 1000px){
-  .game-status-top-sport{
-
-    top: 40px;
-    left: 50%;
-    transform: translateX(-50%);
-font-size: 15px;
-letter-spacing: normal;
-text-align: left;
-  }
-}
-
-
- #game-status-live-top-sport::after {
-  position: absolute;
-  top: 00px;
-  left: 50%;
-  transform: translateX(-50%);
-content: "";
-color: rgb(0, 168, 0);
-animation-name: live-moving;
-animation-duration: 1s;
-animation-iteration-count: infinite;
-}
-
-@keyframes live-moving {
-0% {content: "LIVE";}
-25% {content: "LIVE";}
-50% { content: "LIVE."; }
-65% { content: "LIVE.."; }
-70% { content: "LIVE..."; }
-85% { content: "LIVE.."; }
-100% { content: "LIVE."; }
-}
-
-
-#venue-top-sport{
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-}
-@media screen and (max-width: 1000px){
-  #venue-top-sport{
-font-size: 15px;
-bottom: 10px;
-  }
-}
-
-
-/* OTHER SCORES */
-
-#other-scores {
-width: 90%;
-
-padding: 40px 30px 10px 30px;
-position: absolute;
-top: 400px;
-left: 50%;
-transform: translateX(-50%);
-background-color: #ebebeb56;
-border-radius: 10px;
-
-}
-@media screen and (max-width: 1000px){
-    #other-scores {
-        width: 90%;
-        padding: 10px 10px 10px 10px;
-        top: 200px;
-        left: 50%;
-        transform: translateX(-50%);
-        background-color: #c4c4c4}
-}
-
-#other-scores-coming-soon {
-text-align: center;
-}
-
-#score-card /*^ PARENT*/ {
-
-        padding: 0;
-}
-
-.score-container /*& CHILD*/ {
-        margin: 10px 10px;
-
     display: inline-block;
-width: 300px;
-height: 150px;
-background-color: #414141c7;
-border-radius: 10px;
-
-position: relative;
+margin: 10px 10px;
 }
 
-.score-container #heading {
-position: absolute;
-top: 0;
-margin-bottom: 150px;
-height: 35px;
-width: 100%;
-background-color: #000000;
-border-radius: 10px 10px 0 0;
-display: block;
+#videos {
+    padding: 3px 7px;
+    background-color: rgba(255, 0, 0, 0.404);
+    border-radius: 4px;;
 }
-
-.score-container #time p{
-    position: absolute;
-    top: -7px;
-    left: 5px;
-font-family: arial;
-
-color: white;
+#printing {
+    padding: 3px 7px;
+    background-color: rgba(0, 238, 255, 0.404);
+    border-radius: 4px;;
 }
-
-.score-container  #teams #age-group {
-    position: absolute;
-    top: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-font-weight: 500;
-color: white;
+#moderated {
+    padding: 3px 7px;
+    background-color: rgba(0, 255, 34, 0.404);
+    border-radius: 4px;;
 }
-
-
-#game-status{
-  position: absolute;
-top: -10px;
-right: 10px;
-margin: 0;
+#unmoderated {
+    padding: 3px 7px;
+    background-color: rgba(255, 72, 0, 0.404);
+    border-radius: 4px;;
 }
-
-#game-status-live::after {
-    content: "";
-    color: rgb(0, 168, 0);
-    animation-name: live-moving;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-
+#locked {
+    padding: 3px 7px;
+    background-color: rgba(255, 0, 0, 0.863);
+    color: white;
+    border-radius: 4px;;
 }
-
-#game-status-ft{
-color: white;
+#example {
+    padding: 3px 7px;
+    background-color: rgba(17, 0, 255, 0.863);
+    color: white;
+    border-radius: 4px;;
 }
-
-
-.score-container #body #team-scores {
-    width: 100%;
-    position: absolute;
-    top: 40%;
-left: 50%;
-transform: translate(-50%, -50%);
-text-align: center;
-color: white;
-z-index: 5;
-font-size: 25px;
-white-space: nowrap;
-}
-@media screen and (max-width: 1000px){
-  .score-container #body #team-scores{
-    font-size: 25px;
-  }
-}
-
-
-#venue{
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: white;
-  font-size: 13px;
-  white-space: nowrap;
-}
-
-
-/* SImple Interest */
-
-#HPL-inputs {
- margin: 10px;
-}
-
-#HPL-inputs input {
-  margin-bottom: 10px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* SPORTS DATA/INPUT */
-
-
-
-
-
 
 
 
 /* ANIMATIONS */
 
+
 #whitespace {
-margin-top: 1000px;
+    margin-top: 100px
 }
